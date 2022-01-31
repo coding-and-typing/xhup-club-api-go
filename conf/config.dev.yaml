@@ -1,0 +1,17 @@
+app:
+  name: xhup-club-api-go
+  run_mode: dev
+  addr: 127.0.0.1
+  jwt_expiration_time: 7
+  jwt_secret: jwt_secret
+db:
+  uri: "sqlite:///:memory:"
+  conn_max_lifetime: 600
+  max_idel_conn: 10
+  max_open_conn: 256
+redis:
+  uri: "redis://localhost:6379/0"
+  dial_timeout: 10
+  pool_size: 256
+  read_timeout: 10
+  write_timeout: 10
